@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Title</title>
+  <link href="https://fonts.googleapis.com/css?family=Marck+Script|Roboto:300i,400,500,900&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__wrap">
+      <div class="logo">
+        <img src="img/images/logo.png" alt="Logo" width="223" height="35">
+        <strong>студия современного ремонта</strong>
+      </div>
+      <nav class="menu">
+        <button type="button" class="menu__btn"></button>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#">О нас</a></li>
+          <li class="menu__item">
+            <a href="#">Услуги ремонта</a>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Услуга 1</a></li>
+              <li class="menu__subitem"><a href="#">Услуга 2</a></li>
+              <li class="menu__subitem"><a href="#">Услуга 3</a></li>
+            </ul>
+          </li>
+          <li class="menu__item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <a href="tel:+74954585241" class="header__phone">+7 (495) 458 52 41</a>
+        <a href="mailto:remont_kvartir@gmail.com" class="header__mail">remont_kvartir@gmail.com</a>
+      </div>
+      <a data-fancybox data-src="#call" href="javascript:;" class="btn header__call">Обратный звонок</a>
+    </div>
+  </header>
+  
+  <main>
+    <section class="promo" style="background-image: url(img/backgrounds/bg-1.jpg);">
+      <div class="wrapper">
+        <h1>Качественный ремонт квартир под ключ!</h1>
+        <p>Оплата ремонта по факту выполненых работ</p>
+        <ul class="promo__list">
+          <li class="promo__item">
+            <img src="img/icons/icon-1.png" alt="Смета не меняется в процессе ремонта" width="79" height="81">
+            <span>Смета не меняется в процессе ремонта</span>
+          </li>
+          <li class="promo__item">
+            <img src="img/icons/icon-2.png" alt="Профессиональная команда" width="82" height="79">
+            <span>Профессиональная команда</span>
+          </li>
+          <li class="promo__item">
+            <img src="img/icons/icon-3.png" alt="Креативные идеи от наших дизайнеров" width="82" height="78">
+            <span>Креативные идеи от наших дизайнеров</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="intro">
+      <div class="wrapper">
+        <figure class="intro__img">
+          <img src="img/images/img-1.jpg" alt="">
+        </figure>
+        <div class="intro__info">
+          <p class="intro__prompt">Здравствуйте! Вас приветствует</p>
+          <p class="title">ООО ПрофДомРемонт</p>
+          <p class="intro__text">Наша компания занимается ремонтом квартир, домов и офисов.<br>
+            Так же мы оказываем широкий спектр  услуг по направлениям  натяжные потолки, сантехника и отопление, электромонтажные работы, циклевка паркета, установка дверей.</p>
+          <p class="intro__script">Директор компании  ООО «ПрофДомРемонт»</p>
+          <p class="intro__script">Головин Никита Александрович Спасибо , что вы выбрали  нас.</p>
+          <div class="intro__wrap">
+            <p class="intro__script">Вы можете написать мне письмо</p>
+            <ul class="social">
+              <li class="social__item">
+                <a href="#"><img src="img/icons/icon-telegram.png" alt="telegram"></a>
+              </li>
+              <li class="social__item">
+                <a href="#"><img src="img/icons/icon-watsapp.png" alt="whatsapp"></a>
+              </li>
+              <li class="social__item">
+                <a href="#"><img src="img/icons/icon-viber.png" alt="viber"></a>
+              </li>
+            </ul>
+          </div>
+          <figure class="intro__stamp">
+            <img src="img/images/script.png" alt="Директор компании  ООО «ПрофДомРемонт»">
+          </figure>
+        </div>
+      </div>
+    </section>
+    
+    <section class="online">
+      <div class="wrapper">
+        <p class="title">Онлайн трансляция Вашего ремонта</p>
+        <div class="online__wrap">
+          <figure class="online__img">
+            <img src="img/images/img-2.jpg" alt="Онлайн трансляция Вашего ремонта">
+          </figure>
+          <div class="online__info">
+            <ul class="online__list">
+              <li class="online__item">
+                <figure class="online__icon">
+                  <img src="img/icons/icon-video.png" alt="Можете наблюдать онлайн за ходом ремонта с любого устройства">
+                </figure>
+                <p>Можете наблюдать онлайн за ходом ремонта с любого устройства</p>
+              </li>
+              <li class="online__item">
+                <figure class="online__icon">
+                  <img src="img/icons/icon-photo.png" alt="Получайте бесплатный фотоотчет">
+                </figure>
+                <p>Получайте бесплатный фотоотчет</p>
+              </li>
+            </ul>
+            <p>Out elit eget velit dignissim pellentesque sit amet semper tellus. Morbi efficitur ornare venenatis. Curabitur vel blandit est, id pellentesque velit</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="work">
+      <div class="wrapper">
+        <p class="title">Наши работы</p>
+        <p>Выберите пример ремонта соответствующий Вашему бюджету</p>
+        
+        
+      </div>
+    </section>
+    
+    <section class="benefits">
+      <div class="wrapper">
+        <p class="title">ремонт квартир в москве и области</p>
+        <div class="benefits__wrap">
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <figure class="benefits__icon">
+                <img src="img/icons/icon-4.png" alt="бесплатную смету и консультацию специалиста">
+              </figure>
+              <p>При замере получаете бесплатную смету до 3х вариантов и консультацию специалиста</p>
+              <span>- смету распечатаем на месте.</span>
+            </li>
+            <li class="benefits__item">
+              <figure class="benefits__icon">
+                <img src="img/icons/icon-5.png" alt="Поможем выбрать и доставить материал с разгрузкой">
+              </figure>
+              <p>Поможем выбрать и доставить материал с разгрузкой</p>
+              <span>- есть свои надежные  поставщики, вам не надо тратить свое время.</span>
+            </li>
+            <li class="benefits__item">
+              <figure class="benefits__icon">
+                <img src="img/icons/icon-6.png" alt="Ход работы контролирует прораб">
+              </figure>
+              <p>Ход работы контролирует прораб</p>
+              <span>– контролирует и согласовывает работу мастеров</span>
+            </li>
+            <li class="benefits__item">
+              <figure class="benefits__icon">
+                <img src="img/icons/icon-7.png" alt="Гарантия на выполненные работы">
+              </figure>
+              <p>Гарантия на выполненные работы</p>
+              <span>– прописана в договоре</span>
+            </li>
+            <li class="benefits__item">
+              <figure class="benefits__icon">
+                <img src="img/icons/icon-8.png" alt="Делаем онлайн трансляцию производимых работ">
+              </figure>
+              <p>Делаем онлайн трансляцию производимых работ</p>
+              <span>- или фото отчет.</span>
+            </li>
+            <li class="benefits__item">
+              <figure class="benefits__icon">
+                <img src="img/icons/icon-9.png" alt="Документы для возможности самостоятельного контроля работ">
+              </figure>
+              <p>Документы для возможности самостоятельного контроля работ</p>
+              <span>– акты, чеки, смету, прайс.</span>
+            </li>
+          </ul>
+          
+          <div class="calc">
+            <p class="calc__title">Калькулятор ремонта Вашего жилища</p>
+            <p>Выберите вид ремонта:</p>
+            <form action="#" class="calc__form">
+              <div class="calc__wrap">
+                <input type="radio" name="radio" id="radio-1" class="calc__radio">
+                <label for="radio-1" class="calc__type">Косметический</label>
+                <input type="radio" name="radio" id="radio-2" class="calc__radio" checked>
+                <label for="radio-2" class="calc__type">Капитальный</label>
+                <input type="radio" name="radio" id="radio-3" class="calc__radio">
+                <label for="radio-3" class="calc__type">Дизайнерский</label>
+              </div>
+              <p>Площадь квартиры:</p>
+              <div class="calc__range">
+                <div id="range"></div>
+                <input type="text" id="amount" readonly>
+                <span>м<sup>2</sup></span>
+              </div>
+              <p>Выберите дополнительные услуги:</p>
+              <ul class="calc__list">
+                <li class="calc__item">
+                  <input type="checkbox" id="check-1" class="checkbox">
+                  <label for="check-1" class="checkbox__label">Вторичное жилье</label>
+                </li>
+                <li class="calc__item">
+                  <input type="checkbox" id="check-2" class="checkbox">
+                  <label for="check-2" class="checkbox__label">Шпаклевка стен</label>
+                </li>
+                <li class="calc__item">
+                  <input type="checkbox" id="check-3" class="checkbox">
+                  <label for="check-3" class="checkbox__label">Поклейка обоев</label>
+                </li>
+                <li class="calc__item">
+                  <input type="checkbox" id="check-4" class="checkbox">
+                  <label for="check-4" class="checkbox__label">Укладка плитки</label>
+                </li>
+                <li class="calc__item">
+                  <input type="checkbox" id="check-5" class="checkbox">
+                  <label for="check-5" class="checkbox__label">Поклейка обоев</label>
+                </li>
+                <li class="calc__item">
+                  <input type="checkbox" id="check-6" class="checkbox">
+                  <label for="check-6" class="checkbox__label">Укладка плитки</label>
+                </li>
+              </ul>
+              <button type="submit" class="btn calc__btn">Получить подробную смету бесплатно!</button>
+            </form>
+          </div>
+        </div>
+        <div class="benefits__tag">
+          <figure class="benefits__img">
+            <img src="img/icons/icon-price.png" alt="Цена">
+          </figure>
+          <p>Цена на ремонт прописывается в договоре и меняются если только хотите что-то убрать или добавить</p>
+        </div>
+        <div class="benefits__tag">
+          <figure class="benefits__img">
+            <img src="img/icons/icon-gift.png" alt="ПОДАРОК">
+          </figure>
+          <p>В ПОДАРОК!!!<br>Сертифицированный Немецкий электрощит</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="price">
+      <div class="wrapper">
+        <p class="title">Наши цены</p>
+        <ul class="price__list">
+          <li class="price__item">
+            <figure class="price__img">
+              <img src="img/icons/icon-10.png" alt="Монтажные работы">
+            </figure>
+            <a href="#" class="price__title">Монтажные работы</a>
+            <div class="swiper-container price__slider-1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <p><a href="#">Электромонтажные работы</a></p>
+                  <a href="#">Кабель ГОСТ</a>
+                  <a href="#">Сантехнические работы</a>
+                  <a href="#">REHAY,</a>
+                  <a href="#">Ecoplastik Stabi,</a>
+                  <a href="#">Fiber,</a>
+                  <a href="#">FV – Plast,</a>
+                  <a href="#">Bugatti</a>
+                  
+                  <p><a href="#">Натяжные потолки</a></p>
+                  <a href="#">тканевые/</a>
+                  <a href="#">пвх/</a>
+                  <a href="#">Белые/</a>
+                  <a href="#">цветные/</a>
+                  <a href="#">глянцевые/</a>
+                  <a href="#">матовые/</a>
+                  <a href="#">Pongs</a>
+                </div>
+              </div>
+              <div class="swiper-scrollbar price__scrollbar-1"></div>
+            </div>
+            <p class="price__value">от <span>5000</span> тыс. руб.</p>
+            <a href="#" class="btn price__btn">заказать ремонт</a>
+          </li>
+          <li class="price__item">
+            <figure class="price__img">
+              <img src="img/icons/icon-11.png" alt="Косметический ремонт">
+            </figure>
+            <a href="#" class="price__title">Косметический ремонт</a>
+            <div class="swiper-container price__slider-2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <p><a href="#">Электромонтажные работы</a></p>
+                  <a href="#">Кабель ГОСТ</a>
+                  <a href="#">Сантехнические работы</a>
+                  <a href="#">REHAY,</a>
+                  <a href="#">Ecoplastik Stabi,</a>
+                  <a href="#">Fiber,</a>
+                  <a href="#">FV – Plast,</a>
+                  <a href="#">Bugatti</a>
+                  
+                  <p><a href="#">Натяжные потолки</a></p>
+                  <a href="#">тканевые/</a>
+                  <a href="#">пвх/</a>
+                  <a href="#">Белые/</a>
+                  <a href="#">цветные/</a>
+                  <a href="#">глянцевые/</a>
+                  <a href="#">матовые/</a>
+                  <a href="#">Pongs</a>
+                </div>
+              </div>
+              <div class="swiper-scrollbar price__scrollbar-2"></div>
+            </div>
+            <p class="price__value">от <span>5000</span> тыс. руб.</p>
+            <a href="#" class="btn price__btn">заказать ремонт</a>
+          </li>
+          <li class="price__item">
+            <figure class="price__img">
+              <img src="img/icons/icon-12.png" alt="Капитальный ремонт">
+            </figure>
+            <a href="#" class="price__title">Капитальный ремонт</a>
+            <div class="swiper-container price__slider-3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <p><a href="#">Электромонтажные работы</a></p>
+                  <a href="#">Кабель ГОСТ</a>
+                  <a href="#">Сантехнические работы</a>
+                  <a href="#">REHAY,</a>
+                  <a href="#">Ecoplastik Stabi,</a>
+                  <a href="#">Fiber,</a>
+                  <a href="#">FV – Plast,</a>
+                  <a href="#">Bugatti</a>
+                  
+                  <p><a href="#">Натяжные потолки</a></p>
+                  <a href="#">тканевые/</a>
+                  <a href="#">пвх/</a>
+                  <a href="#">Белые/</a>
+                  <a href="#">цветные/</a>
+                  <a href="#">глянцевые/</a>
+                  <a href="#">матовые/</a>
+                  <a href="#">Pongs</a>
+                </div>
+              </div>
+              <div class="swiper-scrollbar price__scrollbar-3"></div>
+            </div>
+            <p class="price__value">от <span>5000</span> тыс. руб.</p>
+            <a href="#" class="btn price__btn">заказать ремонт</a>
+          </li>
+          <li class="price__item">
+            <figure class="price__img">
+              <img src="img/icons/icon-13.png" alt="Дизайнерский ремонт">
+            </figure>
+            <a href="#" class="price__title">Дизайнерский ремонт</a>
+            <div class="swiper-container price__slider-4">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <p><a href="#">Электромонтажные работы</a></p>
+                  <a href="#">Кабель ГОСТ</a>
+                  <a href="#">Сантехнические работы</a>
+                  <a href="#">REHAY,</a>
+                  <a href="#">Ecoplastik Stabi,</a>
+                  <a href="#">Fiber,</a>
+                  <a href="#">FV – Plast,</a>
+                  <a href="#">Bugatti</a>
+                  
+                  <p><a href="#">Натяжные потолки</a></p>
+                  <a href="#">тканевые/</a>
+                  <a href="#">пвх/</a>
+                  <a href="#">Белые/</a>
+                  <a href="#">цветные/</a>
+                  <a href="#">глянцевые/</a>
+                  <a href="#">матовые/</a>
+                  <a href="#">Pongs</a>
+                </div>
+              </div>
+              <div class="swiper-scrollbar price__scrollbar-4"></div>
+            </div>
+            <p class="price__value">от <span>5000</span> тыс. руб.</p>
+            <a href="#" class="btn price__btn">заказать ремонт</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="sale">
+      <div class="wrapper">
+        <div class="sale__wrap">
+          <figure class="sale__img">
+            <img src="img/images/img-3.jpg" alt="">
+          </figure>
+          <div class="sale__info">
+            <p class="sale__title">Сделайте фото</p>
+            <p class="sale__subtitle">Сэкономьте на ремонте</p>
+            <div class="online__item">
+              <figure class="online__icon">
+                <img src="img/icons/icon-photo.png" alt="получите скидку">
+              </figure>
+              <p>Сфотографируйтесь на фоне Вашего ремонта и получите скидку!</p>
+            </div>
+            <p class="sale__slogan">Мы подарим скидку 7 %</p>
+            <a href="#" class="btn sale__btn">получить скидку</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="team">
+      <div class="wrapper">
+        <p class="title">Наши сотрудники</p>
+        <div class="swiper-container team__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <figure class="team__img">
+                <img src="img/images/person.jpg" alt="">
+              </figure>
+              <div class="team__info">
+                <p class="team__name">Иванов Олег Дмитриевич</p>
+                <p class="team__position">Опыт работы 10 лет мастер широкого профиля</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta congue viverra. Integer hendrerit pharetra diam. Suspendisse vitae bibendum nisi, et volutpat erat. Integer maximus accumsan turpis, vel vestibulum tellus posuere ut. Phasellus pellentesque molestie nisl, et imperdiet purus egestas a. Ut sit amet sem auctor nibh pharetra varius nec sit amet est.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <figure class="team__img">
+                <img src="img/images/person.jpg" alt="">
+              </figure>
+              <div class="team__info">
+                <p class="team__name">Иванов Олег Дмитриевич</p>
+                <p class="team__position">Опыт работы 10 лет мастер широкого профиля</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta congue viverra. Integer hendrerit pharetra diam. Suspendisse vitae bibendum nisi, et volutpat erat. Integer maximus accumsan turpis, vel vestibulum tellus posuere ut. Phasellus pellentesque molestie nisl, et imperdiet purus egestas a. Ut sit amet sem auctor nibh pharetra varius nec sit amet est.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev team__prev"></div>
+          <div class="swiper-button-next team__next"></div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="promo" style="background-image: url(img/backgrounds/bg-3.jpg);">
+      <div class="wrapper">
+        <p class="title">как мы работаем</p>
+        <ul class="promo__list">
+          <li class="promo__item">
+            <img src="img/icons/icon-1.png" alt="Позвоните или оставьте нам заявку на консультацию" width="79" height="81">
+            <span>Позвоните или оставьте нам заявку на консультацию</span>
+          </li>
+          <li class="promo__item">
+            <img src="img/icons/icon-2.png" alt="В удобное для вас время приезжает специалист" width="82" height="79">
+            <span>В удобное для вас время приезжает специалист</span>
+          </li>
+          <li class="promo__item">
+            <img src="img/icons/icon-3.png" alt="Производит расчет и составляет смету" width="82" height="78">
+            <span>Производит расчет и составляет смету</span>
+          </li>
+          <li class="promo__item">
+            <img src="img/icons/icon-14.png" alt="Приступаем к ремонту в течении 3х дней" width="84" height="83">
+            <span>Приступаем к ремонту в течении 3х дней</span>
+          </li>
+          <li class="promo__item">
+            <img src="img/icons/icon-15.png" alt="Работаем, соблюдая шумовой режим" width="86" height="81">
+            <span>Работаем, соблюдая шумовой режим</span>
+          </li>
+          <li class="promo__item">
+            <img src="img/icons/icon-16.png" alt="Принимаете обновленное жилье" width="84" height="78">
+            <span>Принимаете обновленное жилье</span>
+          </li>
+        </ul>
+        <a href="#" class="btn promo__btn">заявка на ремонт</a>
+      </div>
+    </section>
+    
+    <section class="docs">
+      <div class="wrapper">
+        <p class="title">Наши документы</p>
+        <ul class="docs__list">
+          <li class="docs__item">
+            <a data-fancybox="gallery" href="img/images/certificate.jpg"><img src="img/images/certificate.jpg" alt="Наши документы"></a>
+          </li>
+          <li class="docs__item">
+            <a data-fancybox="gallery" href="img/images/certificate.jpg"><img src="img/images/certificate.jpg" alt="Наши документы"></a>
+          </li>
+          <li class="docs__item">
+            <a data-fancybox="gallery" href="img/images/certificate.jpg"><img src="img/images/certificate.jpg" alt="Наши документы"></a>
+          </li>
+          <li class="docs__item">
+            <a data-fancybox="gallery" href="img/images/certificate.jpg"><img src="img/images/certificate.jpg" alt="Наши документы"></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper footer__top">
+      <div class="footer__block">
+        <p class="footer__title">Контакты</p>
+        <a href="tel:+79161535652" class="footer__phone">+7 916 153 56 52</a>
+        <a href="mailto:remont_kvartir@gmail.com" class="footer__mail">remont_kvartir@gmail.com</a>
+        <address>Москва, ул. Смоленская, 24/7</address>
+      </div>
+      <div class="footer__block">
+        <p class="footer__title">Навигация</p>
+        <ul class="footer__list">
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Сертификаты</a></li>
+          <li><a href="#">Цены</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <p class="footer__title">Как нас найти</p>
+        <div class="footer__map">
+          
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="wrapper">
+        <span>Все права защищены «ПрофДомРемонт»</span>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+  
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  
+  <!-- Range slider -->
+  <script>
+    $( function() {
+      $( "#range" ).slider({
+        range: "min",
+        min: 0,
+        max: 150,
+        value: 100,
+        slide: function( event, ui ) {
+          $( "#amount" ).val( ui.value );
+        }
+      });
+      $( "#amount" ).val( $( "#range" ).slider( "value" ) );
+    } );
+  </script>
+  
+  <!-- Scroll sliders -->
+  <script>
+    var swiper = new Swiper('.price__slider-1', {
+      direction: 'vertical',
+      slidesPerView: 'auto',
+      freeMode: true,
+      scrollbar: {
+      el: '.price__scrollbar-1',
+      },
+      mousewheel: true,
+    });
+    
+    var swiper = new Swiper('.price__slider-2', {
+      direction: 'vertical',
+      slidesPerView: 'auto',
+      freeMode: true,
+      scrollbar: {
+      el: '.price__scrollbar-2',
+      },
+      mousewheel: true,
+    });
+    
+    var swiper = new Swiper('.price__slider-3', {
+      direction: 'vertical',
+      slidesPerView: 'auto',
+      freeMode: true,
+      scrollbar: {
+      el: '.price__scrollbar-3',
+      },
+      mousewheel: true,
+    });
+    
+    var swiper = new Swiper('.price__slider-4', {
+      direction: 'vertical',
+      slidesPerView: 'auto',
+      freeMode: true,
+      scrollbar: {
+      el: '.price__scrollbar-4',
+      },
+      mousewheel: true,
+    });
+  </script>
+  
+  <!-- Team slider -->
+  <script>
+    var mySwiper = new Swiper ('.team__slider', {
+      navigation: {
+        nextEl: '.team__next',
+        prevEl: '.team__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+    });
+  </script>
+</body>
+</html>
