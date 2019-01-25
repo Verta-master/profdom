@@ -1,0 +1,74 @@
+.intro {
+  padding-top: 50px;
+  padding-bottom: 90px;
+  background-color: #eef1f2;
+}
+
+.intro__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.intro__img {
+  width: 330px;
+  position: relative;
+  z-index: 2;
+  
+  img {
+    display: block;
+    width: 288px;
+    height: auto;
+    box-shadow: -5px 0 16px 5px rgba(0,0,0,0.15);
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 30px;
+    right: 0;
+    width: 290px;
+    height: 260px;
+    border: 7px solid rgb(217, 217, 217);
+  }
+}
+
+.intro__info {
+  position: relative;
+  width: 800px;
+  font-family: "Marck Script", "Arial", cursive;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.intro__prompt {
+  margin-top: 0;
+  text-align: center;
+  color: @green;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+}
+
+.intro__text {
+  margin-bottom: 40px;
+  color: #365f91;
+  line-height: 24px;
+}
+
+.intro__script {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.intro__line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.intro__stamp {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
