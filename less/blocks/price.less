@@ -1,0 +1,133 @@
+.price {
+  padding-top: 20px;
+  padding-bottom: 55px;
+  background-image: url(../img/backgrounds/bg-4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  .title {
+    color: #fff;
+    
+    &::before {
+      width: 138px;
+    }
+  }
+  
+  .swiper-container {
+    width: 255px;
+    height: 284px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .swiper-scrollbar {
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 6px;
+      background-color: rgb(238, 241, 242);
+    }
+
+    .swiper-scrollbar-drag {
+      background-color: rgb(217, 217, 217);
+    }
+  }
+  
+  .swiper-slide {
+    padding-right: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    height: auto;
+    box-sizing: border-box;
+    
+    p {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+    
+    a {
+      .transition();
+    }
+    
+    a:hover,
+    a:active {
+      color: @green;
+      .transition();
+    }
+  }
+}
+
+.price__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price__item {
+  width: 291px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: rgb(255, 255, 255);
+}
+
+.price__img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 82px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(238, 241, 242);
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 120px;
+    transform: translateX(-50%);
+    background-color: #fff;
+  }
+}
+
+.price__title {
+  margin-bottom: 25px;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 50px;
+  .transition();
+  
+  &:hover,
+  &:active {
+    background-color: @yellow;
+    .transition();
+  }
+}
+
+.price__value {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+  
+  span {
+    color: #f8110c;
+  }
+}
+
+.price__btn {
+  display: block;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  text-align: center;
+}
