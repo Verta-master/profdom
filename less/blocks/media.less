@@ -1,0 +1,271 @@
+@media (max-width: 1240px) {
+  .wrapper {
+    width: 100%;
+  }
+  .menu {
+    margin: 0;
+  }
+  .header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .menu__btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icons/icon-menu-ham.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .menu--opened {
+    .menu__btn {
+      background-image: url(../img/icons/icon-menu-cross.svg);
+    }
+  }
+  .menu__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+  }
+  .menu__item {
+    margin-right: 0;
+  }
+  .menu__link {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid rgb(217, 217, 217);
+  }
+  .promo-steps .promo__item::after,
+  .menu__down {
+    display: none;
+  }
+  .menu__sublist {
+    display: block;
+    position: static;
+    width: 100%;
+    min-width: auto;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: none;
+  }
+  .promo__item {
+    width: 30%;
+  }
+  .intro__info {
+    width: 600px;
+  }
+  .intro__stamp {
+    bottom: -70px;
+  }
+  .benefits__wrap {
+    display: block;
+  }
+  .calc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .benefits__list {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .docs__list,
+  .price__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .price__item {
+    margin-bottom: 20px;
+  }
+  .sale__img {
+    margin-left: 0;
+  }
+  .sale__info {
+    width: 500px;
+  }
+  .team__img,
+  .team__info {
+    width: 45%;
+  }
+  .docs__item {
+    margin-right: 0;
+  }
+  .header__contacts {
+    margin-right: 20px;
+  }
+}
+
+//----------------------------------------------
+@media (max-width: 1022px) {
+  .promo h1 {
+    font-size: 40px;
+  }
+  .promo p {
+    font-size: 24px;
+  }
+  .promo__item {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  .promo__list {
+    justify-content: space-around;
+  }
+  .sale__wrap,
+  .online__wrap,
+  .intro__wrap {
+    flex-direction: column-reverse;
+  }
+  .online__img {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+  }
+  .sale__img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .intro__img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+  .sale__info,
+  .online__info,
+  .intro__info {
+    width: 100%;
+    margin-left: 0;
+  }
+  .sale {
+    padding-bottom: 100px;
+  }
+  .footer__top {
+    flex-wrap: wrap;
+  }
+  .footer__title--right {
+    text-align: center;
+  }
+  .footer__map,
+  .footer__block--map {
+    width: 100%;
+  }
+  .footer__block--map {
+    margin-top: 20px;
+  }
+}
+
+//-------------------------------------------------
+@media (max-width: 665px) {
+  .header__wrap {
+    flex-wrap: wrap;
+  }
+  .menu {
+    margin-left: auto;
+  }
+  .promo h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  .header__block {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .header__contacts {
+    margin: 0;
+  }
+  .promo__item {
+    width: 100%;
+  }
+  .intro__line {
+    display: block;
+  }
+  .social {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .benefits__list {
+    width: 100%;
+  }
+  .benefits__info {
+    width: ~"calc(100% - 110px)";
+    
+    p {
+      font-size: 16px;
+      line-height: 1.2;
+    }
+  }
+  .calc {
+    max-width: 100%;
+  }
+  .calc__form {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+  }
+  .calc__btn {
+    flex-wrap: wrap;
+    height: 70px;
+    padding: 0;
+  }
+  .benefits__tag p {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .team__slider .swiper-slide {
+    display: block;
+  }
+  .team__img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team__info {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .team__name,
+  .team__position {
+    text-align: center;
+  }
+  .promo-steps .promo__item {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
+
+//------------------------------------------
+@media (max-width: 480px) {
+  .footer__title--right {
+    text-align: left;
+  }
+  .footer__block {
+    margin-top: 20px;
+  }
+  .footer__top {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .intro__img,
+  .sale__img {
+    width: 100%;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+    
+    &::before {
+      display: none;
+    }
+  }
+  .promo {
+    padding-bottom: 50px;
+  }
+}

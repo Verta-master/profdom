@@ -10,8 +10,8 @@
 
 .calc__title {
   margin: 0;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 5px 50px;
+  padding-bottom: 15px;
   font-size: 24px;
   color: @green;
   background-color: #eef1f2;
@@ -51,6 +51,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
   }
   .ui-tabs .ui-tabs-nav li {
     .reset();
@@ -103,6 +104,9 @@
 }
 
 .calc__wrap {
+  padding-top: 3px;
+  padding-right: 10px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -195,7 +199,7 @@
   display: block;
   position: relative;
   padding-left: 45px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   color: #919191;
   font-size: 16px;
   font-weight: 500;
@@ -242,7 +246,11 @@
   letter-spacing: 0.05em;
   
   span {
-    margin-right: 5px;
+    margin-left: 5px;
     text-transform: uppercase;
   }
+}
+
+.calc__field {
+  margin-bottom: 30px !important;
 }
