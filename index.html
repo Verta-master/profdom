@@ -203,48 +203,59 @@
             <p class="calc__title">Калькулятор ремонта Вашего жилища</p>
             <p>Выберите вид ремонта:</p>
             <form action="#" class="calc__form">
-              <div class="calc__wrap">
-                <input type="radio" name="radio" id="radio-1" class="calc__radio">
-                <label for="radio-1" class="calc__type">Косметический</label>
-                <input type="radio" name="radio" id="radio-2" class="calc__radio" checked>
-                <label for="radio-2" class="calc__type">Капитальный</label>
-                <input type="radio" name="radio" id="radio-3" class="calc__radio">
-                <label for="radio-3" class="calc__type">Дизайнерский</label>
+              <div class="calc__tabs" id="tabs">
+                <ul class="calc__btns">
+                  <li class="calc__name"><a href="#tabs-1">Косметический</a></li>
+                  <li class="calc__name"><a href="#tabs-2">Капитальный</a></li>
+                  <li class="calc__name"><a href="#tabs-3">Дизайнерский</a></li>
+                </ul>
+                
+                <p>Площадь квартиры:</p>
+                <div class="calc__wrap">
+                  <div class="calc__range">
+                    <div id="range"></div>
+                  </div>
+                  <input type="text" id="amount" class="calc__input" readonly>
+                  <span>м<sup>2</sup></span>
+                </div>
+                
+                <div class="calc__field" id="tabs-1">
+                  <p>Выберите дополнительные услуги:</p>
+                  <ul class="calc__list">
+                    <li class="calc__item">
+                      <input type="checkbox" id="check-1" class="checkbox">
+                      <label for="check-1" class="checkbox__label">Вторичное жилье</label>
+                    </li>
+                    <li class="calc__item">
+                      <input type="checkbox" id="check-2" class="checkbox" checked>
+                      <label for="check-2" class="checkbox__label">Шпаклевка стен</label>
+                    </li>
+                    <li class="calc__item">
+                      <input type="checkbox" id="check-3" class="checkbox">
+                      <label for="check-3" class="checkbox__label">Поклейка обоев</label>
+                    </li>
+                    <li class="calc__item">
+                      <input type="checkbox" id="check-4" class="checkbox">
+                      <label for="check-4" class="checkbox__label">Укладка плитки</label>
+                    </li>
+                    <li class="calc__item">
+                      <input type="checkbox" id="check-5" class="checkbox">
+                      <label for="check-5" class="checkbox__label">Поклейка обоев</label>
+                    </li>
+                    <li class="calc__item">
+                      <input type="checkbox" id="check-6" class="checkbox">
+                      <label for="check-6" class="checkbox__label">Укладка плитки</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="calc__field" id="tabs-2">
+                  услуги 2
+                </div>
+                <div class="calc__field" id="tabs-3">
+                  услуги 3
+                </div>
               </div>
-              <p>Площадь квартиры:</p>
-              <div class="calc__range">
-                <div id="range"></div>
-                <input type="text" id="amount" readonly>
-                <span>м<sup>2</sup></span>
-              </div>
-              <p>Выберите дополнительные услуги:</p>
-              <ul class="calc__list">
-                <li class="calc__item">
-                  <input type="checkbox" id="check-1" class="checkbox">
-                  <label for="check-1" class="checkbox__label">Вторичное жилье</label>
-                </li>
-                <li class="calc__item">
-                  <input type="checkbox" id="check-2" class="checkbox">
-                  <label for="check-2" class="checkbox__label">Шпаклевка стен</label>
-                </li>
-                <li class="calc__item">
-                  <input type="checkbox" id="check-3" class="checkbox">
-                  <label for="check-3" class="checkbox__label">Поклейка обоев</label>
-                </li>
-                <li class="calc__item">
-                  <input type="checkbox" id="check-4" class="checkbox">
-                  <label for="check-4" class="checkbox__label">Укладка плитки</label>
-                </li>
-                <li class="calc__item">
-                  <input type="checkbox" id="check-5" class="checkbox">
-                  <label for="check-5" class="checkbox__label">Поклейка обоев</label>
-                </li>
-                <li class="calc__item">
-                  <input type="checkbox" id="check-6" class="checkbox">
-                  <label for="check-6" class="checkbox__label">Укладка плитки</label>
-                </li>
-              </ul>
-              <button type="submit" class="btn calc__btn">Получить подробную смету бесплатно!</button>
+              <button type="submit" class="btn calc__btn">Получить подробную смету <span>бесплатно!</span></button>
             </form>
           </div>
         </div>
@@ -546,6 +557,17 @@
         <a href="tel:+79161535652" class="footer__phone">+7 916 153 56 52</a>
         <a href="mailto:remont_kvartir@gmail.com" class="footer__mail">remont_kvartir@gmail.com</a>
         <address>Москва, ул. Смоленская, 24/7</address>
+        <ul class="footer__social">
+          <li class="footer__link">
+            <a href="#"><img src="img/icons/twitter.png" alt="Twitter"></a>
+          </li>
+          <li class="footer__link">
+            <a href="#"><img src="img/icons/vk.png" alt="VKontakte"></a>
+          </li>
+          <li class="footer__link">
+            <a href="#"><img src="img/icons/facebook.png" alt="Facebook"></a>
+          </li>
+        </ul>
       </div>
       <div class="footer__block">
         <p class="footer__title">Навигация</p>
@@ -577,6 +599,7 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   
@@ -594,6 +617,13 @@
       });
       $( "#amount" ).val( $( "#range" ).slider( "value" ) );
     } );
+  </script>
+  
+  <!-- Tabs -->
+  <script>
+    $(function() {
+      $("#tabs").tabs();
+    });
   </script>
   
   <!-- Scroll sliders -->
