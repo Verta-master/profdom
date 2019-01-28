@@ -10,6 +10,80 @@
   .title::before {
     width: 164px;
   }
+  
+  .ui-widget.ui-widget-content {
+    border: 0;
+  }
+  .ui-widget-content {
+    background-color: rgba(255,255,255,0);
+    color: #fff;
+  }
+  .ui-widget-header {
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    border: 0;
+    background-color: rgba(255,255,255,0);
+  }
+  .ui-tabs .ui-tabs-panel {
+    padding: 0;
+  }
+  .ui-tabs .ui-tabs-nav li {
+    .reset();
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    background-color: rgba(255,255,255,0);
+    border: 0;
+    position: static;
+  }
+  .ui-state-default a {
+    color: #fff;
+    outline: none;
+  }
+  .ui-tabs-active {
+    a {
+      color: @yellow;
+    }
+    
+    &::before {
+      display: flex;
+    }
+  }
+}
+
+.tabs__name {
+  &::before {
+    display: none;
+    position: absolute;
+    top: 160%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 190px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    border: 2px solid rgb(228, 220, 10);
+  }
+  
+  &:first-child::before {
+    content: "100 000 р";
+  }
+  &:nth-child(2)::before {
+    content: "200 000 р";
+  }
+  &:nth-child(3)::before {
+    content: "300 000 р";
+  }
 }
 
 .work__subtitle {
@@ -20,8 +94,8 @@
   letter-spacing: 0.05em;
 }
 
-.work__slider {
-  margin-top: 80px;
+.work .swiper-container {
+  margin-top: 190px;
   padding-bottom: 75px;
   
   .swiper-slide {
@@ -52,22 +126,22 @@
       display: block;
     }
   }
-}
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: auto;
+    bottom: 0;
+    background-image: url(../img/icons/next-arrow.png);
+    background-size: 22px 40px;
+    outline: none;
+  }
 
-.work__next,
-.work__prev {
-  top: auto;
-  bottom: 0;
-  background-image: url(../img/icons/next-arrow.png);
-  background-size: 22px 40px;
-  outline: none;
-}
+  .swiper-button-prev {
+    left: 40%;
+    transform: rotate(180deg);
+  }
 
-.work__prev {
-  left: 40%;
-  transform: rotate(180deg);
-}
-
-.work__next {
-  right: 40%;
+  .swiper-button-next {
+    right: 40%;
+  }
 }
