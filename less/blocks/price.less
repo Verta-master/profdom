@@ -71,6 +71,14 @@
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: rgb(255, 255, 255);
+  
+  &:hover,
+  &:active {
+    .price__title {
+      background-color: @yellow;
+      .transition();
+    }
+  }
 }
 
 .price__img {
@@ -105,12 +113,6 @@
   font-weight: 900;
   line-height: 50px;
   .transition();
-  
-  &:hover,
-  &:active {
-    background-color: @yellow;
-    .transition();
-  }
 }
 
 .price__value {
