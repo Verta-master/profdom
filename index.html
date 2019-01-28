@@ -596,7 +596,14 @@
   
   <!-- Modal window -->
   <div style="display: none;" id="call" class="modal">
-  
+    <p class="modal__title">Заказать звонок</p>
+    <form action="#" class="modal__form">
+      <input type="text" class="modal__input" placeholder="Имя">
+      <input type="text" class="modal__input" placeholder="Телефон">
+      <input type="checkbox" id="check" class="checkbox">
+      <label for="check" class="checkbox__label">Я не робот</label>
+      <button type="submit" class="btn modal__btn">Заказать</button>
+    </form>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
