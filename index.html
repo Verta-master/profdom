@@ -136,8 +136,37 @@
       <div class="wrapper">
         <p class="title">Наши работы</p>
         <p class="work__subtitle">Выберите пример ремонта соответствующий Вашему бюджету</p>
-        
-        
+        <div class="swiper-container work__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a data-fancybox="slider" href="img/images/img-3.jpg">
+                <img src="img/images/img-3.jpg" alt="Наши работы">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a data-fancybox="slider" href="img/images/img-4.jpg">
+                <img src="img/images/img-4.jpg" alt="Наши работы">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a data-fancybox="slider" href="img/images/img-5.jpg">
+                <img src="img/images/img-5.jpg" alt="Наши работы">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a data-fancybox="slider" href="img/images/img-3.jpg">
+                <img src="img/images/img-3.jpg" alt="Наши работы">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a data-fancybox="slider" href="img/images/img-4.jpg">
+                <img src="img/images/img-4.jpg" alt="Наши работы">
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next work__next"></div>
+          <div class="swiper-button-prev work__prev"></div>
+        </div>
       </div>
     </section>
     
@@ -697,6 +726,21 @@
   <!-- Animation -->
   <script>
     new WOW().init();
+  </script>
+  
+  <!-- Works slider -->
+  <script>
+    var swiper = new Swiper('.work__slider', {
+      slidesPerView: 'auto',
+      spaceBetween: 15,
+      navigation: {
+        nextEl: '.work__next',
+        prevEl: '.work__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+    });
   </script>
 </body>
 </html>
