@@ -979,6 +979,60 @@ address {
   font-weight: 400;
   letter-spacing: 0.05em;
 }
+.work__slider {
+  margin-top: 80px;
+  padding-bottom: 75px;
+}
+.work__slider .swiper-slide {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 391px;
+  height: 223px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.work__slider .swiper-slide::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 38px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url(../img/icons/icon-zoom.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.work__slider .swiper-slide img {
+  display: block;
+}
+.work__next,
+.work__prev {
+  top: auto;
+  bottom: 0;
+  background-image: url(../img/icons/next-arrow.png);
+  background-size: 22px 40px;
+  outline: none;
+}
+.work__prev {
+  left: 40%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.work__next {
+  right: 40%;
+}
 .benefits {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -2025,6 +2079,11 @@ address {
   .header__contacts {
     margin-right: 20px;
   }
+  .work__slider {
+    margin-left: auto;
+    margin-right: auto;
+    width: 797px;
+  }
 }
 @media (max-width: 1022px) {
   .promo h1 {
@@ -2085,6 +2144,9 @@ address {
   }
   .footer__block--map {
     margin-top: 20px;
+  }
+  .work__slider {
+    width: 391px;
   }
 }
 @media (max-width: 665px) {
@@ -2168,6 +2230,18 @@ address {
   .promo-steps .promo__item {
     margin-top: 0;
     margin-bottom: 50px;
+  }
+  .work__slider {
+    width: 270px;
+  }
+  .work__slider .swiper-slide {
+    width: 270px;
+  }
+  .work__prev {
+    left: 30%;
+  }
+  .work__next {
+    right: 30%;
   }
 }
 @media (max-width: 480px) {
