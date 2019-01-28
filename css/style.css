@@ -1321,7 +1321,7 @@ address {
 .checkbox__label::before {
   content: "";
   position: absolute;
-  top: 3px;
+  top: 0;
   left: 0;
   width: 27px;
   height: 27px;
@@ -1878,6 +1878,39 @@ address {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.modal__title {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+.modal__input {
+  display: block;
+  width: 250px;
+  height: 50px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #eef1f2;
+}
+.modal__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+}
 @media (max-width: 1240px) {
   .wrapper {
     width: 100%;
@@ -2159,6 +2192,7 @@ address {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .intro__info .title::before,
   .title::before {
     width: 270px;
   }
@@ -2180,6 +2214,7 @@ address {
     font-size: 20px;
     text-align: center;
   }
+  .online__img,
   .team__img,
   .calc__item,
   .calc__form .ui-tabs .ui-tabs-nav li {
@@ -2190,6 +2225,9 @@ address {
   }
   .calc__btn {
     height: 80px;
+  }
+  .calc__range {
+    width: calc(100% - 55px);
   }
   .sale__subtitle {
     margin-bottom: 30px;
@@ -2206,5 +2244,14 @@ address {
   }
   .team__position {
     font-size: 16px;
+  }
+  .header__phone {
+    font-size: 16px;
+  }
+  .header__mail {
+    font-size: 12px;
+  }
+  .header__call {
+    padding: 10px;
   }
 }
