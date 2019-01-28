@@ -1438,6 +1438,12 @@ address {
   padding-bottom: 25px;
   background-color: #ffffff;
 }
+.price__item:hover .price__title,
+.price__item:active .price__title {
+  background-color: #e4dc0a;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
 .price__img {
   position: relative;
   z-index: 2;
@@ -1474,12 +1480,6 @@ address {
   font-size: 20px;
   font-weight: 900;
   line-height: 50px;
-  -webkit-transition: ease-out 0.3s;
-  transition: ease-out 0.3s;
-}
-.price__title:hover,
-.price__title:active {
-  background-color: #e4dc0a;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
@@ -1693,6 +1693,7 @@ address {
   margin-right: 107px;
   margin-bottom: 20px;
   border: 2px solid #e4dc0a;
+  overflow: hidden;
 }
 .docs__item:nth-child(4n) {
   margin-right: 0;
@@ -1700,6 +1701,7 @@ address {
 .docs__item::before {
   content: "пример";
   position: absolute;
+  z-index: 10;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
@@ -1708,6 +1710,17 @@ address {
   font-size: 24px;
   font-weight: 900;
   letter-spacing: 0.3em;
+}
+.docs__item img {
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.docs__item:hover img,
+.docs__item:active img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 .footer {
   color: #fff;
